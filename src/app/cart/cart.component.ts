@@ -8,7 +8,6 @@ import { CartService } from '../cart.service';
 })
 export class CartComponent {
   items = this.cartService.getItems();
-  clear = this.cartService.clearCart();
 
   constructor(private cartService: CartService) {}
 }

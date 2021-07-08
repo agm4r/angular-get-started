@@ -14,11 +14,6 @@ export class CartService {
     return this.items;
   }
 
-  clearCart() {
-    this.items = [];
-    return this.items;
-  }
-
   getShippingPrices() {
     return this.http.get<{ type: String; price: number }[]>(
       '/assets/shipping.json'
